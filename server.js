@@ -15,6 +15,8 @@ app.use(express.json()); //parse the data
 //===============Route===================
 
 app.use('/api/user', require('./routes/userRoutes'));
+app.use('/api/movies', require('./routes/movieRoutes'));
+
 app.get('/', (req, res) => {
     res.send('Welcome to my API');
 });

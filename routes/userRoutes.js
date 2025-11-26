@@ -10,5 +10,6 @@ userRouter.get("/", getAllUsers);
  * GET /user/:id
  */
 userRouter.get("/:id", getUserById);
+
 module.exports = userRouter;
 
